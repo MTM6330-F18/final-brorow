@@ -1,9 +1,13 @@
-@import './schedules.scss';
-
-$primary: #373737;
+$primary: #373537;
+$secondary: #E2E2E2;
 
 body {
   font-family: 'Raleway', 'Segoe UI', sans-serif !important;
 }
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+.active {
+  font-weight: 700 !important;
+}
+
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+
