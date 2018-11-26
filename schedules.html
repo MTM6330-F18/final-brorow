@@ -7,54 +7,66 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="./css/min/main.css">
-  <link rel="stylesheet" href=".\node_modules\bootstrap\dist\css\bootstrap.min.css" />
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 
 <body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">IMD</a>
 
-  <div id="wrapper">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link pr-4 pl-3" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item font-weight-light pr-4">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item font-weight-light pr-4">
+            <a class="nav-link" href="#">Professors</a>
+          </li>
+          <li class="nav-item font-weight-light pr-4">
+            <a class="nav-link" href="#">Schedules</a>
+          </li>
+        </ul>
+      </div>
+      <a class="navbar-brand" href="http://www.algonquincollege.com/" target="_blank">
+        <img src="./images/Algonquin-Logo-No-Fill.svg" width="40" height="40" class="d-inline-block align-top" alt="" />
+      </a>
+    </nav>
+  </header>
+  <div class="d-flex">
 
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <p>
-            Schedules
-          </p>
-        </li>
-        <li>
-          <a href="#">Group 1</a>
-        </li>
-        <li>
-          <a href="#">Group 2</a>
-        </li>
-        <li>
-          <a href="#">Group 3</a>
-        </li>
-        <li>
-          <a href="#">Group 4</a>
-        </li>
+
+    <div id="list-example" class="w-25 list-group bg-secondary">
+      <a class="list-group-item list-group-item-action border-0 bg-secondary" href="#list-item-1">Group 1</a>
+      <a class="list-group-item list-group-item-action border-0 bg-secondary" href="#list-item-2">Group 2</a>
+      <a class="list-group-item list-group-item-action border-0 bg-secondary" href="#list-item-3">Group 3</a>
+      <a class="list-group-item list-group-item-action border-0 bg-secondary" href="#list-item-4">Group 4</a>
     </div>
-    <!-- /#sidebar-wrapper -->
-
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-      <div class="container-fluid">
-        <h1>Simple Sidebar</h1>
-        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens,
-          and will appear non-collapsed on larger screens. When toggled using the button below, the menu will
-          appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+    <div class="container-fluid">
+      <h1>Schedules</h1>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-50" src=".\images\schedule-01.svg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://via.placeholder.com/400x201" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://via.placeholder.com/400x202" alt="Third slide">
+          </div>
+        </div>
       </div>
     </div>
-    <!-- /#page-content-wrapper -->
-
   </div>
-
-
-
-
-
 </body>
 
 </html>
