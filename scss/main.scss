@@ -1,7 +1,8 @@
 $primary: #373737;
+$light: hsla(0, 0%, 100%, 0.9);
 
 body {
   font-family: 'Raleway', 'Segoe UI', sans-serif !important;
 }
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss'
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
