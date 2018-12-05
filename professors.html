@@ -37,12 +37,31 @@
     </nav>
   </header>
   <div class="d-flex">
-    <div id="list-example" class="w-25 list-group bg-secondary">
-      <a class="list-group-item list-group-item-action border-0 bg-secondary" href="#list-item-1">Group 1</a>
-      <a class="list-group-item list-group-item-action border-0 bg-secondary" href="#list-item-2">Group 2</a>
-      <a class="list-group-item list-group-item-action border-0 bg-secondary" href="#list-item-3">Group 3</a>
-      <a class="list-group-item list-group-item-action border-0 bg-secondary" href="#list-item-4">Group 4</a>
-    </div>
+      <div class="w-25 list-group bg-secondary" data-ride="carousel">
+          <a
+            id="1"
+            class="list-group-item border-0 bg-secondary carousel-control"
+            href="#"
+            data-slide-to="0"
+            onClick="switchCarousel(this.id)"
+            >Micheal Eisenbraun</a
+          >
+          <a
+            id="2"
+            class="list-group-item border-0 bg-secondary carousel-control"
+            href="#"
+            data-slide-to="1"
+            onClick="switchCarousel(this.id)"
+            >Robert McKenney</a
+          >
+          <a
+            id="3"
+            class="list-group-item border-0 bg-secondary carousel-control"
+            href="#"
+            data-slide-to="2"
+            onClick="switchCarousel(this.id)"
+            >Micheal Lacroix</a>
+        </div>
 
     <div class="container">
         <div class="row">
@@ -105,6 +124,8 @@
 
 
   </div>
+  
 </body>
-
+<script src="./js/main.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </html>
