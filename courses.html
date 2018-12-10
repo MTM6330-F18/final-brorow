@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+  <link rel="stylesheet" href="./node_modules/bootstrap/scss/bootstrap.scss" />
+  <link rel="stylesheet" href="./css/min/main.css" />
+</head>
+
+<body class="bg-primary">
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+      <a class="navbar-brand font-weight-bold " href="#">IMD</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link pr-4 pl-3" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item font-weight-light pr-4">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item font-weight-light pr-4">
+            <a class="nav-link" href="#">Professors</a>
+          </li>
+          <li class="nav-item font-weight-light pr-4 active">
+            <a class="nav-link" href="#">Schedules</a>
+          </li>
+        </ul>
+      </div>
+      <a class="navbar-brand" href="http://www.algonquincollege.com/" target="_blank">
+        <img src="./images/Algonquin-Logo-No-Fill.svg" width="40" height="40" class="d-inline-block align-top" alt="" />
+      </a>
+    </nav>
+  </header>
+
+  <div class="d-flex">
+    <div class="w-25 list-group bg-secondary" data-ride="carousel">
+      <a id="1" class="list-group-item border-0 bg-secondary carousel-control" href="#" data-slide-to="0" onClick="switchCarousel(this.id)">Video
+        Foundations</a>
+      <a id="2" class="list-group-item border-0 bg-secondary carousel-control" href="#" data-slide-to="1" onClick="switchCarousel(this.id)">Content
+        Management Systems I</a>
+      <a id="3" class="list-group-item border-0 bg-secondary carousel-control" href="#" data-slide-to="2" onClick="switchCarousel(this.id)">User
+        Experience Design</a>
+    </div>
+    <div class="container-fluid p-4 bg-white">
+
+      <div class="carousel-inner">
+        <div id="carousel1" class="carousel-item active">
+          <div class="container">
+            <div class="d-flex" style="background-image:url(./images/video-head.jpg); height:200px;">
+              <h2 class="text-white text-center" style="margin:auto; text-shadow: 1px 1px 1px black;">Video
+                Foundations</h2>
+            </div>
+
+            <p>Course code: MTM6200</p>
+            <p> Students learn the full video production life cycle, from planning and pre-production, to editing and
+              post-production. Video and audio technology and tools are introduced, building on the techniques and best
+              practices developed through DSLR photography. Students practise working through pre-production and
+              production of both video and audio, ensuring the best quality result when transitioning to
+              post-production to limit the amount of correction needed during the editing process.
+
+              Prerequisites: MTM6100</p>
+          </div>
+        </div>
+        <div id="carousel2" class="carousel-item">
+          <div class="container">
+            <div class="d-flex" style="background-image:url(./images/cms-head.jpg); height:200px;">
+              <h2 class="text-white text-center" style="margin:auto; text-shadow: 1px 1px 1px black;">Content
+                Management
+                Systems I</h2>
+            </div>
+
+            <p>Course code: MTM6231</p>
+            <p> In the fast-paced media industry, not every project needs to be built from scratch. Content Management
+              Systems (CMS) offer pre-built functionality that designers and developers can work with to deliver
+              diverse, feature-rich, modern websites. Students learn first-hand how to quickly install, configure,
+              customize and style websites built on these systems. In addition, students learn how and when using a CMS
+              is appropriate, when it can benefit projects and clients and how to integrate a variety of social media
+              systems within their CMS.
+
+              Prerequisites: MTM6130</p>
+          </div>
+        </div>
+        <div id="carousel3" class="carousel-item">
+          <div class="container">
+            <div class="d-flex" style="background-image:url(./images/uxd-head.jpg); height:200px;">
+              <h2 class="text-white text-center" style="margin:auto; text-shadow: 1px 1px 1px black;">User Experience
+                Design</h2>
+            </div>
+
+            <p>Course code: MTM6260</p>
+            <p>Going beyond the basics of creating graphics and user interfaces, students focus on how interfaces need
+              to react to user expectations. Students apply previously learned best practices for designing effective
+              interfaces that allow improved work flow while integrating lessons learned by gathering user feedback and
+              usability data. Practical and effective planning for user interfaces is introduced.
+
+              Prerequisites: MTM6161
+            </p>
+          </div>
+        </div>
+
+        <div id="carousel4" class="carousel-item">
+          <div class="container">
+            <div class="d-flex" style="background-image:url(./images/uxd-head.jpg); height:200px;">
+              <h2 class="text-white text-center" style="margin:auto; text-shadow: 1px 1px 1px black;">User Experience
+                Design</h2>
+            </div>
+
+            <p>Course code: MTM6260</p>
+            <p>Going beyond the basics of creating graphics and user interfaces, students focus on how interfaces need
+              to react to user expectations. Students apply previously learned best practices for designing effective
+              interfaces that allow improved work flow while integrating lessons learned by gathering user feedback and
+              usability data. Practical and effective planning for user interfaces is introduced.
+
+              Prerequisites: MTM6161
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary d-flex justify-content-between">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-primary p-0">
+          <a href="" class="badge badge-primary">Sitemap</a>
+        </li>
+        <li class="list-group-item bg-primary p-0">
+          <a href="" class="badge badge-primary">Links</a>
+        </li>
+        <li class="list-group-item bg-primary p-0">
+          <a href="" class="badge badge-primary">Algonquin</a>
+        </li>
+      </ul>
+      <h6 class="text-white align-self-end">
+        All Rights Reserved | Algonquin College | Copyright 2018
+      </h6>
+      <a class="navbar-brand" href="http://www.algonquincollege.com/" target="_blank">
+        <img src="./images/Algonquin-Logo-Fill.svg" width="60" height="60" class="d-inline-block align-top" alt="" />
+      </a>
+    </nav>
+  </footer>
+</body>
+<script src="./js/main.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+</html>
