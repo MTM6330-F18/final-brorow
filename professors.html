@@ -1,114 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/scss/bootstrap.scss"
+    />
+    <link rel="stylesheet" href="./css/min/main.css" />
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <a class="navbar-brand font-weight-bold " href="#">IMD</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link pr-4 pl-3" href="#"
+                >Home<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item font-weight-light pr-4">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item font-weight-light pr-4 active">
+              <a class="nav-link" href="#">Professors</a>
+            </li>
+            <li class="nav-item font-weight-light pr-4">
+              <a class="nav-link" href="#">Schedules</a>
+            </li>
+          </ul>
+        </div>
+        <a
+          class="navbar-brand"
+          href="http://www.algonquincollege.com/"
+          target="_blank"
+        >
+          <img
+            src="./images/Algonquin-Logo-No-Fill.svg"
+            width="40"
+            height="40"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </a>
+      </nav>
+    </header>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>IMD | Professors</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
-  <link rel="stylesheet" href="./node_modules/bootstrap/scss/bootstrap.scss" />
-  <link rel="stylesheet" href="./css/min/main.css">
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-</head>
+    <div class="d-flex">
+      <div class="w-25 list-group bg-secondary" data-ride="carousel">
+        <a
+          id="1"
+          class="list-group-item border-0 bg-secondary carousel-control"
+          href="#"
+          data-slide-to="0"
+          onClick="switchCarousel(this.id)"
+          >Micheal Eisenbraun</a
+        >
+        <a
+          id="2"
+          class="list-group-item border-0 bg-secondary carousel-control"
+          href="#"
+          data-slide-to="1"
+          onClick="switchCarousel(this.id)"
+          >Adam Jarvis</a
+        >
+        <a
+          id="3"
+          class="list-group-item border-0 bg-secondary carousel-control"
+          href="#"
+          data-slide-to="2"
+          onClick="switchCarousel(this.id)"
+          >Robert McKenney</a
+        >
+        
+      </div>
+      <div class="container-fluid" style="padding: 0;">
+        <div class="carousel-inner">
+          <div id="carousel1" class="carousel-item active">
+              <div class="container">
+                  <div class="row">
+                    <div class="col" style="padding: 2rem 2rem 4rem 2rem;">
+          <img src="./images/micheal.jpg" class="mw-100 " alt="Micheal">
+        
+          <p style="padding: 2rem 0 0 0;">Classes</p>
+<ul>
+  <li>Clientside Web Development</li>
+  <li>Serverside Web Development</li>
+</ul>
+<p>Fun attribute</p>
+<ul>
+  <li>Really does like web development as a hobby</li>
+  <li>Stay at home dad, that loves his three kids, with two of them being a set of twins </li>
+</ul>
+<p>Education</p>
+<ul>
+  <li>Iowa State University</li>
+</ul>
+                </div>
+                    <div class="col-7 " style="padding: 2rem 5rem 2rem 0.75rem;">
+                      
+                      <h1>Michael Eisenbraun</h1>
+                      <p>The one thing about this field, I’ve been doing web development as a hobby for 20 years. 10 Years of professional experience. I started teaching because I’ve always had an interest in learning, hence the self taught. Thought it would be an interesting challenge to teach others. Encourage others to learn. </p>                             <h2>Portfolio Pieces</h2>
+                              <div class="row">
+                                <div class="col-lg-4 col-6 "><img class="img-thumbnail img-fluid" src="./images/Portfolio-piece.jpg" alt=""></div>
+                                <div class="col-lg-4 col-6 "><img class="img-thumbnail img-fluid" src="./images/Portfolio-piece.jpg" alt=""></div>
+                                <div class="col-lg-4 col-6 "><img class="img-thumbnail img-fluid" src="./images/Portfolio-piece.jpg" alt=""></div>
+                              </div>   
+                              <div class="container">
+                                  <div class="row">
+                                    <div class="col">
+                        
+                          
+                                      
+                          <p style="padding: 2rem 0 0 0;">
+                            <strong>Skills</strong>      </p> 
+                            <ul>
+                                <li>Lots of experience with Java Script and PHP</li>
+                                <li>Problem solving; trouble shooting</li>
+                                <li>Self taught, legend.</li>
+                            </ul> 
+                                  
+                                </div>
+                                    <div class="col-6 " style="padding: 2rem 0 0 0; ">
+                                      
+                                        <p>
+                                            <strong>Experience</strong></p> 
+                                            <ul>
+                                                <li>Mutual of Omaha (Insurance company)</li>
+                                                <li>Conservative party of Canada non-profit</li>
+                                                <li>History Museum</li>
+                                            </ul> 
+                                                                    
+                                    </div>
+                                  </div>
+                                </div>   
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div id="carousel2" class="carousel-item">
+              <div class="container">
+                  <div class="row">
+                    <div class="col" style="padding: 2rem 2rem 4rem 2rem;">
+          <img src="./images/adam.jpg" class="mw-100 " alt="Micheal">
+        
+          <p style="padding: 2rem 0 0 0;">Classes</p>
+<ul>
+<li>Applied Projects Level 3</li>
+<li>Applied Projects Level 4</li>
+<li>Project Manager Course</li> 
+</ul>
+<p>Fun attribute</p>
+<ul>    
+<li>Ultimate Frisby</li>
+<li> Father of a boy 17 months</li>
+  <li>Ball Hockey</li>
+</ul>
+<p>Education</p>
+<ul>   
+<li>Bachelor's from Carleton in Film Studies and a minor in Classic History</li>
+<li>IMD Diploma</li>
+<li>Masters of Education</li>
+</ul>
+                </div>
+                    <div class="col-7 " style="padding: 2rem 5rem 2rem 0.75rem;">
+                      
+                      <h1>Adam Jarvis</h1>
+                      <p>He never saw himself as a teacher, until 2009, Adam worked in 3D digital modelling and architecture, and during that time also developed the company’s website. In 2009, he was offered a teaching position at Algonquin College in Ottawa and currently teaches in various disciplines, including graphic design, web design and development, multimedia development, and multimedia journalism, at skill levels ranging from beginner to expert.  He has also coordinated the one-year post-graduate certificate program, Interactive Multimedia, during two summer semesters.</p>                             
+                      <h2>Portfolio Pieces</h2>
+                              <div class="row">
+                                <div class="col-lg-4 col-6 "><img class="img-thumbnail img-fluid" src="./images/Portfolio-piece.jpg" alt=""></div>
+                                <div class="col-lg-4 col-6 "><img class="img-thumbnail img-fluid" src="./images/Portfolio-piece.jpg" alt=""></div>
+                                <div class="col-lg-4 col-6 "><img class="img-thumbnail img-fluid" src="./images/Portfolio-piece.jpg" alt=""></div>
+                              </div>   
+                              <div class="container">
+                                  <div class="row">
+                                    <div class="col">
+                        
+                          
+                                      
+                          <p style="padding: 2rem 0 0 0;"><strong>Skills</strong></p> 
+                            <ul>                        
+                               <li>Coding as whole</li>
+                               <li> JavaScript</li>
+                               <li>Adobe Illustrator</li>                            
+                            </ul> 
+                                  
+                                </div>
+                                    <div class="col-6 " style="padding: 2rem 0 0 0; ">
+                                      
+                                        <p>
+                                            <strong>Experience</strong></p> 
+                                            <ul>
+                                                <li>Small company 3Vista</li>
+                                                <li>Global advantage – Vice President</li>
+                                            </ul> 
+                                                                
+                                    </div>
+                                  </div>
+                                </div>   
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div id="carousel3" class="carousel-item">
+              <div class="container">
+                  <div class="row">
+                    <div class="col" style="padding: 2rem 2rem 4rem 2rem;">
+          <img src="./images/robert.jpg" class="mw-100 " alt="Micheal">
+        
+          <p style="padding: 2rem 0 0 0;">Classes</p>
+<ul>
+  <li>Web Applications</li>
+  <li>Web Productions</li>
+  <li>Mobile applications - Mobile Application Design and Development (MADD) </li>
+</ul>
+<p>Fun attribute</p>
+<ul>
+  <li>Really does like web development as a hobby.</li>
+  <li>Completed and are pursing my pilots license. </li>
+  <li>Father of 2 small kids. </li>
 
-<body>
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand font-weight-bold " href="#">IMD</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item font-weight-light pr-4">
-            <a class="nav-link pl-3" href="overview.html">Home</a>
+</ul>
+<p>Education</p>
+<ul>
+  <li>Education never ends, I keep learning 10 hours per week. Here are a few of the ways I learn, meetups, seminars online, tutorials, and monitor the official documentation tools, its an ongoing going process.</li>
+</ul>
+                </div>
+                    <div class="col-7 " style="padding: 2rem 5rem 2rem 0.75rem;">
+                      
+                      <h1>Robert McKenney</h1>
+                      <p>Even if your objective is being a designer, code and design go hand in hand. The more you understand about the one then it helps the other, to be a strong designer, you need to know code, and vice versa. I love the opportunity to light the fire for the next generation and share the excite, be also being real with the students. Pass the torch, with them having a solid understanding of how to manage your time, how to focus, and get the task list delegated, then following through with the project on time. We structure these courses with the following mentality; if you put in the effort to practice, you’ll do well but if you don’t do that you’re going to struggle.</p>                             
+                      <h2>Portfolio Pieces</h2>
+                      <div class="row">
+                                <div class="col-lg-4 col-6 "><img class="img-thumbnail img-fluid" src="./images/Portfolio-piece.jpg" alt=""></div>
+                                <div class="col-lg-4 col-6 "><img class="img-thumbnail img-fluid" src="./images/Portfolio-piece.jpg" alt=""></div>
+                                <div class="col-lg-4 col-6 "><img class="img-thumbnail img-fluid" src="./images/Portfolio-piece.jpg" alt=""></div>
+                              </div>   
+                              <div class="container">
+                                  <div class="row">
+                                    <div class="col">
+                        
+                          
+                                      
+                                      <p style="padding: 2rem 0 0 0;"><strong>Skills</strong></p> 
+                                      <ul>
+                                          <li>Full stack web developer, Entrepreneur, and Educator. I love building front end web applications with @vuejs and backend APIs with @laravel PHP or @nodejs.</li>
+                                      </ul> 
+                                            
+                                          </div>
+                                              <div class="col-6 " style="padding: 2rem 0 0 0; ">
+                                                
+                                                  <p>
+                                                      <strong>Experience</strong></p> 
+                                                      <ul>
+                                                          <li>Product Manager, Startup – setting its go to market strategy.</li>
+                                                          <li>Leading the Startup, including, 100% of the part</li>
+                                                          <li>Bell Canada</li>
+                                                      </ul>
+                                                                    
+                                    </div>
+                                  </div>
+                                </div>   
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div id="carousel4" class="carousel-item">
+            <img
+              class="d-block w-50"
+              src=".\images\schedule-04.svg"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-primary d-flex justify-content-between"
+      >
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-primary p-0">
+            <a href="" class="badge badge-primary">Sitemap</a>
           </li>
-          <li class="nav-item font-weight-light pr-4">
-            <a class="nav-link" href="courses.html">Courses</a>
+          <li class="list-group-item bg-primary p-0">
+            <a href="" class="badge badge-primary">Links</a>
           </li>
-          <li class="nav-item active pr-4">
-            <a class="nav-link" href="professors.html">Professors</a>
-          </li>
-          <li class="nav-item font-weight-light pr-4">
-            <a class="nav-link" href="schedules.html">Schedules</a>
+          <li class="list-group-item bg-primary p-0">
+            <a href="" class="badge badge-primary">Algonquin</a>
           </li>
         </ul>
-      </div>
-      <a class="navbar-brand" href="http://www.algonquincollege.com/" target="_blank">
-        <img src="./images/Algonquin-Logo-No-Fill.svg" width="40" height="40" class="d-inline-block align-top" alt="" />
-      </a>
-    </nav>
-  </header>
-  <div class="d-flex">
-    <div id="list-example" class="w-25 list-group bg-secondary">
-      <a class="list-group-item list-group-item-action border-0 bg-secondary" href="#list-item-1">Group 1</a>
-      <a class="list-group-item list-group-item-action border-0 bg-secondary" href="#list-item-2">Group 2</a>
-      <a class="list-group-item list-group-item-action border-0 bg-secondary" href="#list-item-3">Group 3</a>
-      <a class="list-group-item list-group-item-action border-0 bg-secondary" href="#list-item-4">Group 4</a>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col" style="padding: 2rem 2rem 4rem 2rem;">
-          <img src="./images/micheal.jpg" class="mw-100 " alt="Micheal">
-
-
-
-
-        </div>
-        <div class="col-7 " style="padding: 2rem 5rem 2rem 0.75rem;">
-
-          <h1>Michael Eisenbraun</h1>
-          <p>The creation of digital art requires an understanding of the modern techniques, tools and file formats the
-            industry uses. By exploring these, students become familiar with the process of planning for and executing
-            digital graphics and design assets. Students also examine best practices for file size and format,
-            optimization, and the development of assets for use both online and in print.</p>
-
-          <h2>Portfolio Pieces</h2>
-          <div class="row">
-            <div class="col-lg-4 col-6 "><img class="img-thumbnail img-fluid" src="./images/Portfolio-piece.jpg" alt=""></div>
-            <div class="col-lg-4 col-6 "><img class="img-thumbnail img-fluid" src="./images/Portfolio-piece.jpg" alt=""></div>
-            <div class="col-lg-4 col-6 "><img class="img-thumbnail img-fluid" src="./images/Portfolio-piece.jpg" alt=""></div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col">
-
-
-
-                <p style="padding: 2rem 0 0 0;">
-                  <strong>Classes</strong>
-                  <ul>
-                    <li>Server-Side Web Development ></li>
-                    <li>Client-Side Web Development ></li>
-                  </ul>
-                </p>
-              </div>
-              <div class="col-6 " style="padding: 2rem 0 0 0; ">
-
-                <p>
-                  <strong>Classes</strong>
-                  <ul>
-                    <li>Server-Side Web Development ></li>
-                    <li>Client-Side Web Development ></li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-
-        </div>
-      </div>
-    </div>
-
-
-
-
-  </div>
-</body>
-
+        <h6 class="text-white align-self-end">
+          All Rights Reserved | Algonquin College | Copyright 2018
+        </h6>
+        <a
+          class="navbar-brand"
+          href="http://www.algonquincollege.com/"
+          target="_blank"
+        >
+          <img
+            src="./images/Algonquin-Logo-Fill.svg"
+            width="60"
+            height="60"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </a>
+      </nav>
+    </footer>
+  </body>
+  <script src="./js/main.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </html>
